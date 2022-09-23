@@ -40,11 +40,11 @@ public class Account {
 
     public void debit(double amount){
         if(amount > 0){
-            if(amount < this.getBalance()){
+            if(amount < this.balance){
                 this.balance -= amount;
-            }
-        } else{
-            System.out.println("Debit amount exceeded account balance.");
+            } else{
+                System.err.println("Debit amount exceeded account balance.");
+        }
         }
     }
 
