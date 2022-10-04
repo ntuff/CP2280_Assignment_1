@@ -16,23 +16,33 @@ public class AccountTest {
 
         //Test 2: Deposit and check the balance
         System.out.println("\n\n Deposit 10 dollars... ");
-        account.deposit(10.0);
+        account.credit(10.0);
         printAccountInfo(account);
 
 
         //Test 3:
-        System.out.println("\n\n Deposit a negative amount... ");
+        System.out.println("\n\n Withdraw a negative amount... ");
         account.debit(100.0);
         printAccountInfo(account);
 
-        //Test 4:
-        //System.out.println("\n\n ");
-        //account.debit(10.0);
-        //printAccountInfo(account);
+        //Test 4: Deposit a negative amount check the balance
+        System.out.println("\n\n Deposit -10 dollars... ");
+        account.credit(-10.0);
+        printAccountInfo(account);
 
         //Test 5:
         System.out.println("\n\n Debit amount larger than the amount...");
         account.debit(100.0);
+        printAccountInfo(account);
+
+        //Test 6:
+        System.out.println("\n\n Withdraw an acceptable amount... ");
+        account.debit(5.0);
+        printAccountInfo(account);
+
+        //Test 6:
+        System.out.println("\n\n Reset account balance to zero... ");
+        account.reset();
         printAccountInfo(account);
     }
 

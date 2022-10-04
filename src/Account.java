@@ -24,20 +24,16 @@ public class Account {
         return balance;
     }
 
-    public void deposit(double amount){
+
+
+    //Deposit
+    public void credit(double amount){
         if(amount > 0){
             this.balance = this.balance + amount;
         }
     }
 
-    public void withdraw(double amount){
-        if(amount > this.balance){
-            this.balance = this.balance - amount;
-        } else{
-            System.out.println("Debit amount exceeded account balance.");
-        }
-    }
-
+    // Withdrawal
     public void debit(double amount){
         if(amount > 0){
             if(amount < this.balance){
@@ -46,6 +42,10 @@ public class Account {
                 System.err.println("Debit amount exceeded account balance.");
         }
         }
+    }
+
+    public void reset(){
+        this.balance = 0;
     }
 
 }
