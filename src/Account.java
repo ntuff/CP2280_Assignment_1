@@ -36,7 +36,7 @@ public class Account {
     // Withdrawal
     public void debit(double amount){
         if(amount > 0){
-            if(amount < this.balance){
+            if(amount <= this.balance){
                 this.balance -= amount;
             } else{
                 System.err.println("Debit amount exceeded account balance.");
