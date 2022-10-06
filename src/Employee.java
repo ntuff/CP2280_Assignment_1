@@ -22,9 +22,7 @@ public class Employee {
     }
 
     public void setMonthlySalary(Double monthlySalary) {
-        if (monthlySalary <= 0){
-            this.monthlySalary = (double) 0;
-        } else{
+        if (monthlySalary >= 0){
             this.monthlySalary = monthlySalary;
         }
     }

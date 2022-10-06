@@ -9,9 +9,25 @@ public class EmployeeTest {
         printEmployeeInfo(employee1);
         printEmployeeInfo(employee2);
 
+        // Test 2: Change first name
+        employee2.setFirstName("Emmit");
+        printEmployeeInfo(employee2);
+
+        // Test 3: Change last name
+        employee2.setLastName("Brown");
+        printEmployeeInfo(employee2);
+
+        // Test 4: Raise monthly salary by percentage
+        employee1.raiseMonthlySalary(7.5);
+        printEmployeeInfo(employee1);
+
+        // Test 5: Set monthly salary to negative number
+        employee2.setMonthlySalary((double) -1800);
+        printEmployeeInfo(employee2);
+
     }
 
     public static void printEmployeeInfo(Employee employee){
-        System.out.printf("First name: %s\nLast name: %s\nBalance: $%.2f\n", employee.getFirstName(), employee.getLastName(), employee.getMonthlySalary());
+        System.out.printf("First name: %s\nLast name: %s\nBalance: $%.2f\n\n", employee.getFirstName(), employee.getLastName(), employee.getMonthlySalary());
     }
 }
