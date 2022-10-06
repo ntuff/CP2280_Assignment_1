@@ -1,9 +1,11 @@
+/**
+ * @author 20148596
+ */
+
 public class Employee {
     private String firstName;
     private String lastName;
     private Double monthlySalary;
-
-
 
     public Employee(String firstName, String lastName, double monthlySalary){
         this.firstName = firstName;
@@ -20,6 +22,28 @@ public class Employee {
     }
 
     public void setMonthlySalary(Double monthlySalary) {
-        this.monthlySalary = monthlySalary;
+        if (monthlySalary <= 0){
+            this.monthlySalary = (double) 0;
+        } else{
+            this.monthlySalary = monthlySalary;
+        }
     }
-};
+
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public String getLastName(){
+        return lastName;
+    }
+
+    public Double getMonthlySalary(){
+        return monthlySalary;
+    }
+
+    public void raiseMonthlySalary(double raisePercentage){
+        double newMonthlySalary = this.getMonthlySalary() * (raisePercentage / 100) + this.getMonthlySalary();
+        this.setMonthlySalary(newMonthlySalary);
+    }
+
+}
