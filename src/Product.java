@@ -1,16 +1,16 @@
 public class Product {
 
-    private Double id;
+    private int id;
     private String description;
     private Double price;
 
-    public Product(Double id, String description, Double price){
+    public Product(int id, String description, Double price){
         this.id = id;
         this.description = description;
         this.price = price;
     }
 
-    public void setId(Double id) {
+    public void setId(int id) {
         if (id >= 0) {
             this.id = id;
         }
@@ -26,7 +26,7 @@ public class Product {
         }
     }
 
-    public Double getId() {
+    public int getId() {
         return id;
     }
 
