@@ -14,31 +14,31 @@ public class Product {
         this.price = price;
     }
 
-    public void setId(int id) {
+    public void setId(int id){
         if (id >= 0) {
             this.id = id;
         }
     }
 
-    public void setDescription(String description) {
+    public void setDescription(String description){
         this.description = description;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(Double price){
         if (price >= 0){
             this.price = price;
         }
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public String getDescription() {
+    public String getDescription(){
         return description;
     }
 
-    public Double getPrice() {
+    public Double getPrice(){
         return price;
     }
 }

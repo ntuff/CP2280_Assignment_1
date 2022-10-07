@@ -23,6 +23,7 @@ public class ProductTest {
                 "This is a placeholder description.",
                 33.33);
 
+
         System.out.println("-- Test 1 --");
         printProductInfo(product1);
         printProductInfo(product2);
