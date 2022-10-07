@@ -5,20 +5,22 @@
 public class Invoice {
 
     public LineItem lineItem;
-    private int line;
 
-    public Invoice(LineItem lineItem, int line){
+    public Product product;
+    
 
-        this.lineItem = lineItem;
+    LineItem lineItem1 = new LineItem(new Product(
+            1, "desc1", 11.11),0);
 
-        LineItem lineItem1 = new LineItem(new Product(
-                1, "desc1", 11.11),0);
+    LineItem lineItem2 = new LineItem(new Product(
+            2, "desc2", 22.22),0);
 
-        LineItem lineItem2 = new LineItem(new Product(
-                2, "desc2", 22.22),0);
+    LineItem lineItem3 = new LineItem(new Product(
+            3, "desc3", 33.33),0);
 
-        LineItem lineItem3 = new LineItem(new Product(
-                3, "desc3", 33.33),0);
+    public Invoice(LineItem lineItem1, LineItem lineItem2, LineItem lineItem3){
+
+
     }
 
     public void setLineItem(int line, LineItem lineItem){
@@ -29,8 +31,14 @@ public class Invoice {
         this.line = line;
     }
 
-    public void getLineItem(int line, LineItem lineItem){
-
+    public LineItem getLineItem(int line, LineItem lineItem){
+        return lineItem;
     }
 
+    public void getTotal(double price, int quantity) {
+        if (quantity > 0) {
+            double total = product.getPrice() * this.quantity;
+            product.setPrice(total);
+        }
+    }
 }
