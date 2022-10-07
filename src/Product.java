@@ -1,3 +1,7 @@
+/**
+ * @author 20148596
+ */
+
 public class Product {
 
     private int id;
