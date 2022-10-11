@@ -26,7 +26,7 @@ public class EmployeeTest {
         printEmployeeInfo(employee1);
 
         // Test 5: Set monthly salary to negative number
-        employee2.setMonthlySalary((double) -1800);
+        employee2.setMonthlySalary((double) - 1800);
         printEmployeeInfo(employee2);
 
     }

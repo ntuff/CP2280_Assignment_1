@@ -5,7 +5,7 @@
 public class Employee {
     private String firstName;
     private String lastName;
-    private Double monthlySalary;
+    private double monthlySalary;
 
     public Employee(String firstName, String lastName, double monthlySalary){
         this.firstName = firstName;
@@ -21,7 +21,7 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public void setMonthlySalary(Double monthlySalary) {
+    public void setMonthlySalary(double monthlySalary) {
         if (monthlySalary >= 0){
             this.monthlySalary = monthlySalary;
         }
@@ -35,7 +35,7 @@ public class Employee {
         return lastName;
     }
 
-    public Double getMonthlySalary(){
+    public double getMonthlySalary(){
         return monthlySalary;
     }
 

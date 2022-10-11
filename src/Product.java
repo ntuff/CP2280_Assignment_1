@@ -6,9 +6,9 @@ public class Product {
 
     private int id;
     private String description;
-    private Double price;
+    private double price;
 
-    public Product(int id, String description, Double price){
+    public Product(int id, String description, double price){
         this.id = id;
         this.description = description;
         this.price = price;
@@ -24,7 +24,7 @@ public class Product {
         this.description = description;
     }
 
-    public void setPrice(Double price){
+    public void setPrice(double price){
         if (price >= 0){
             this.price = price;
         }
@@ -38,7 +38,7 @@ public class Product {
         return description;
     }
 
-    public Double getPrice(){
+    public double getPrice(){
         return price;
     }
 }

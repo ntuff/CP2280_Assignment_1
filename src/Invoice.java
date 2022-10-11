@@ -4,36 +4,52 @@
 
 public class Invoice {
 
-    public LineItem lineItem;
-    public Product product;
 
+    private LineItem lineItem1;
+    private LineItem lineItem2;
+    private LineItem lineItem3;
 
-    LineItem lineItem1 = new LineItem(new Product(
-            1, "desc1", 11.11),0);
+//    public LineItem(){
+//        this.lineItem1 = getBlankLineItem();
+//        this.lineItem2 = getBlankLineItem();
+//        this.lineItem3 = getBlankLineItem();
+//    }
 
-    LineItem lineItem2 = new LineItem(new Product(
-            2, "desc2", 22.22),0);
+    public LineItem getLineItem(int line) {
+        if (line == 1){
+            return lineItem1;
 
-    LineItem lineItem3 = new LineItem(new Product(
-            3, "desc3", 33.33),0);
+        } else if (line == 2){
+            return lineItem2;
 
+        } else if (line == 3){
+            return lineItem3;
+        } else{
+            return lineItem3;
+        }
+    }
 
     public void setLineItem(int line, LineItem lineItem){
         if (line == 1){
-            this.lineItem = lineItem;
+            this.lineItem1 = lineItem;
 
         } else if (line == 2){
-            this.lineItem = lineItem;
+            this.lineItem2 = lineItem;
 
         } else if (line == 3){
-            this.lineItem = lineItem;
+            this.lineItem3 = lineItem;
         }
     }
 
 
-    public void getInvoiceTotal() {
-        double invoiceTotal;
-        invoiceTotal = lineItem1.product.getPrice() + lineItem2.product.getPrice() + lineItem3.product.getPrice();
+    private  LineItem getBlankLineItem(){
+        return new LineItem(new Product(0, "", 0), 0);
+    }
+
+    public double getInvoiceTotal() {
+        return lineItem1.product.getPrice() + lineItem2.product.getPrice() + lineItem3.product.getPrice();
+//        return invoiceTotal;
+
 
         //        invoiceTotal = invoiceTotal + lineItem1.getTotal() + lineItem2.getTotal() + lineItem3.getTotal();
     }
