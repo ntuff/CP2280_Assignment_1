@@ -29,10 +29,14 @@ public class LineItem{
         return quantity;
     }
 
-    public void getTotal(){
-        if(quantity > 0){
-           double total = product.getPrice() * this.quantity;
-           product.setPrice(total);
+
+
+    public double getTotal(){
+        if(quantity > 0) {
+            double total = product.getPrice() * this.quantity;
+            product.setPrice(total);
+            return total;
         }
+        return 0;
     }
 }

@@ -9,6 +9,7 @@ public class Invoice {
     private LineItem lineItem2;
     private LineItem lineItem3;
 
+    //TODO:
 //    public LineItem(){
 //        this.lineItem1 = getBlankLineItem();
 //        this.lineItem2 = getBlankLineItem();
@@ -41,17 +42,12 @@ public class Invoice {
         }
     }
 
-
     private  LineItem getBlankLineItem(){
         return new LineItem(new Product(0, "", 0), 0);
     }
 
     public double getInvoiceTotal() {
         return lineItem1.product.getPrice() + lineItem2.product.getPrice() + lineItem3.product.getPrice();
-//        return invoiceTotal;
-
-
-        //        invoiceTotal = invoiceTotal + lineItem1.getTotal() + lineItem2.getTotal() + lineItem3.getTotal();
     }
 }
 

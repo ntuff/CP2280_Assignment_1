@@ -5,8 +5,8 @@
 public class Product {
 
     private int id;
-    private String description;
-    private double price;
+    public String description;
+    public double price;
 
     public Product(int id, String description, double price){
         this.id = id;
