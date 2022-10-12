@@ -8,6 +8,7 @@ public class LineItemTest {
     public LineItem lineItem;
     public Invoice invoice;
 
+
     public static void main(String[] args) {
         Product product1 = new Product(1, "This is a placeholder description.", 11.11);
         LineItem lineItem1 = new LineItem(product1, 1);
