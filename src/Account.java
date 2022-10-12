@@ -17,7 +17,7 @@ public class Account {
     }
 
     /**
-     *
+     * Replaces the current account name with a new name. This value must be a string.
      * @param name
      */
     public void setName(String name) {
@@ -25,24 +25,24 @@ public class Account {
     }
 
     /**
-     *
-     * @return
+     *Returns the current account name as a string.
+     * @return name
      */
     public String getName() {
         return this.name;
     }
 
     /**
-     *
-     * @return
+     * Returns the current account balance as a double.
+     * @return balance
      */
     public double getBalance() {
         return balance;
     }
 
-    //Deposit
     /**
-     *
+     * Adds an amount to the current account balance as long as the contribution is greater than zero.
+     * This "credit" naming convention may be misinterpreted. Think of this method as a deposit.
      * @param amount
      */
     public void credit(double amount){
@@ -51,9 +51,11 @@ public class Account {
         }
     }
 
-    // Withdrawal
     /**
-     *
+     * Subtracts an amount from the current account balance as long as:
+     * - the current amount is greater than zero
+     * - the current amount is greater than the deduction.
+     * This "debit" naming convention may be misinterpreted. Think of this method as a withdrawal.
      * @param amount
      */
     public void debit(double amount){
@@ -67,7 +69,7 @@ public class Account {
     }
 
     /**
-     *
+     * Resets the current account balance to zero.
      */
     public void reset(){
         this.balance = 0;
