@@ -4,12 +4,13 @@
  * This class an auxiliary component of LineItem and Invoice classes.
  */
 public class Product {
+
     private int id;
     public String description;
     public double price;
 
     /**
-     * Creates a product
+     * Creates a product.
      * @param id An integer used to identify the product. Value must be >= 0.
      * @param description A character string used to describe the product.
      * @param price A double representing the dollar value of the product.
@@ -17,7 +18,9 @@ public class Product {
     public Product(int id, String description, double price){
         this.id = id;
         this.description = description;
-        this.price = price;
+        if (price >= 0){
+            this.price = price;
+        }
     }
 
     /**

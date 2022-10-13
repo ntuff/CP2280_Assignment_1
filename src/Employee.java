@@ -3,12 +3,13 @@
  * @author 20148596
  */
 public class Employee {
+
     private String firstName;
     private String lastName;
     private double monthlySalary;
 
     /**
-     *
+     * Creates an employee.
      * @param firstName First name of employee. This value must be a string.
      * @param lastName Last name of employee. This value must be a string.
      * @param monthlySalary Amount of dollars paid to employee on a monthly basis. This value must be a double.
@@ -16,7 +17,9 @@ public class Employee {
     public Employee(String firstName, String lastName, double monthlySalary){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.monthlySalary = monthlySalary;
+        if (monthlySalary >= 0){
+            this.monthlySalary = monthlySalary;
+        }
     }
 
     /**

@@ -3,11 +3,12 @@
  * @author 20148596
  */
 public class Account {
+
     private String name;
     private double balance;
 
     /**
-     *
+     * Creates an account.
      * @param name Name assigned to the account.
      * @param balance Number of dollars stored in the account.
      */

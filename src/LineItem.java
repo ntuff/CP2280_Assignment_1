@@ -4,6 +4,7 @@
  * @author 20148596
  */
 public class LineItem{
+
     private int quantity;
     public Product product;
 
@@ -14,9 +15,10 @@ public class LineItem{
      */
     public LineItem(Product product, int quantity){
         this.product = product;
-        this.quantity = quantity;
+        if(quantity > 0){
+            this.quantity = quantity;
+        }
     }
-
 
     /**
      * Replaces the current product value with a new product.
@@ -39,7 +41,9 @@ public class LineItem{
      * @param quantity An integer used to measure the amount of the product.
      */
     public void setQuantity(int quantity){
-        this.quantity = quantity;
+        if(quantity > 0){
+            this.quantity = quantity;
+        }
     }
 
     /**

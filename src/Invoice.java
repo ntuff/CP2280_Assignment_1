@@ -4,12 +4,13 @@
  * @author 20148596
  */
 public class Invoice {
+
     public LineItem lineItem1;
     public LineItem lineItem2;
     public LineItem lineItem3;
 
     /**
-     * Creates an invoice
+     * Creates an invoice.
      * @param lineItem1 line item created in LineItem class.
      * @param lineItem2 line item created in LineItem class.
      * @param lineItem3 line item created in LineItem class.
@@ -51,6 +52,7 @@ public class Invoice {
 
         } else if (line == 3){
             return lineItem3;
+
         } else{
             return lineItem3;
         }
@@ -69,7 +71,7 @@ public class Invoice {
      * @return cost of combined lineItem1, lineItem2, and lineItem3
      */
     public double getInvoiceTotal() {
-        return lineItem1.product.getPrice() + lineItem2.product.getPrice() + lineItem3.product.getPrice();
+        return (lineItem1.product.getPrice() * lineItem1.getQuantity()) + (lineItem2.product.getPrice() * lineItem2.getQuantity()) + (lineItem3.product.getPrice() * lineItem3.getQuantity());
     }
 }
 
