@@ -1,4 +1,5 @@
 /**
+ * Contains account class
  * @author 20148596
  */
 
@@ -8,8 +9,8 @@ public class Account {
 
     /**
      *
-     * @param name
-     * @param balance
+     * @param name Name assigned to the account.
+     * @param balance Number of dollars stored in the account.
      */
     public Account(String name, double balance) {this.name = name;
         if(balance > 0)
@@ -18,7 +19,7 @@ public class Account {
 
     /**
      * Replaces the current account name with a new name. This value must be a string.
-     * @param name
+     * @param name Name assigned to the account.
      */
     public void setName(String name) {
         this.name = name;
@@ -43,7 +44,7 @@ public class Account {
     /**
      * Adds an amount to the current account balance as long as the contribution is greater than zero.
      * This "credit" naming convention may be misinterpreted. Think of this method as a deposit.
-     * @param amount
+     * @param amount Number of dollars to interact with balance.
      */
     public void credit(double amount){
         if(amount > 0){
@@ -56,7 +57,7 @@ public class Account {
      * - the current amount is greater than zero
      * - the current amount is greater than the deduction.
      * This "debit" naming convention may be misinterpreted. Think of this method as a withdrawal.
-     * @param amount
+     * @param amount Number of dollars to interact with balance.
      */
     public void debit(double amount){
         if(amount > 0){
