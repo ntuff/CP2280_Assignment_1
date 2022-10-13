@@ -1,5 +1,5 @@
 /**
- * Contains account class
+ * Contains account class.
  * @author 20148596
  */
 

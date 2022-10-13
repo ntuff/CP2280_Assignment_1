@@ -1,5 +1,5 @@
 /**
- * Contains employee class
+ * Contains employee class.
  * @author 20148596
  */
 

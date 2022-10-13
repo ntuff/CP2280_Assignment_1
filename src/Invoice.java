@@ -5,9 +5,9 @@
  */
 
 public class Invoice {
-    private LineItem lineItem1;
-    private LineItem lineItem2;
-    private LineItem lineItem3;
+    public LineItem lineItem1;
+    public LineItem lineItem2;
+    public LineItem lineItem3;
 
     /**
      * Creates an invoice
