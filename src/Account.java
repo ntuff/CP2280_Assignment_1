@@ -1,8 +1,7 @@
 /**
- * Contains account class.
+ * Contains Account class.
  * @author 20148596
  */
-
 public class Account {
     private String name;
     private double balance;

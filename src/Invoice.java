@@ -3,7 +3,6 @@
  * This class utilizes both LineItem and Product classes.
  * @author 20148596
  */
-
 public class Invoice {
     public LineItem lineItem1;
     public LineItem lineItem2;
@@ -22,6 +21,23 @@ public class Invoice {
     }
 
     /**
+     * Replaces current line item value with new line item.
+     * @param line line number of the line item.
+     * @param lineItem lineItem created in LineItem class.
+     */
+    public void setLineItem(int line, LineItem lineItem){
+        if (line == 1){
+            this.lineItem1 = lineItem;
+
+        } else if (line == 2){
+            this.lineItem2 = lineItem;
+
+        } else if (line == 3){
+            this.lineItem3 = lineItem;
+        }
+    }
+
+    /**
      * Returns the line item corresponding to the given line number. Given value must be an integer.
      * @param line Line number of line item.
      * @return lineItem1 || lineItem2 || lineItem3
@@ -37,23 +53,6 @@ public class Invoice {
             return lineItem3;
         } else{
             return lineItem3;
-        }
-    }
-
-    /**
-     * Replaces current line item value with new line item.
-     * @param line line number of the line item.
-     * @param lineItem lineItem created in LineItem class.
-     */
-    public void setLineItem(int line, LineItem lineItem){
-        if (line == 1){
-            this.lineItem1 = lineItem;
-
-        } else if (line == 2){
-            this.lineItem2 = lineItem;
-
-        } else if (line == 3){
-            this.lineItem3 = lineItem;
         }
     }
 

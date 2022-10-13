@@ -1,15 +1,14 @@
 /**
  * Contains LineItem class.
- * This class an auxiliary component of Invoice class. it also utilizes the Product class.
+ * This class an auxiliary component of Invoice class. It also utilizes the Product class.
  * @author 20148596
  */
-//*TODO: format getters and setters
 public class LineItem{
     private int quantity;
     public Product product;
 
     /**
-     * Creates a line item
+     * Creates a line item.
      * @param product product created in Product class.
      * @param quantity An integer used to measure the amount of the product.
      */
@@ -17,6 +16,7 @@ public class LineItem{
         this.product = product;
         this.quantity = quantity;
     }
+
 
     /**
      * Replaces the current product value with a new product.

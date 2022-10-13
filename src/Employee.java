@@ -1,8 +1,7 @@
 /**
- * Contains employee class.
+ * Contains Employee class.
  * @author 20148596
  */
-
 public class Employee {
     private String firstName;
     private String lastName;
@@ -29,11 +28,27 @@ public class Employee {
     }
 
     /**
+     * Returns the current employee's first name as a string.
+     * @return firstName
+     */
+    public String getFirstName(){
+        return firstName;
+    }
+
+    /**
      * Replaces the current employee's last name with a new last name. This value must be a string.
      * @param lastName Last name of employee. This value must be a string.
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    /**
+     * Returns the current employee's last name as a string.
+     * @return lastName
+     */
+    public String getLastName(){
+        return lastName;
     }
 
     /**
@@ -44,22 +59,6 @@ public class Employee {
         if (monthlySalary >= 0){
             this.monthlySalary = monthlySalary;
         }
-    }
-
-    /**
-     * Returns the current employee's first name as a string.
-     * @return firstName
-     */
-    public String getFirstName(){
-        return firstName;
-    }
-
-    /**
-     * Returns the current employee's last name as a string.
-     * @return lastName
-     */
-    public String getLastName(){
-        return lastName;
     }
 
     /**
@@ -78,5 +77,4 @@ public class Employee {
         double newMonthlySalary = this.getMonthlySalary() * (raisePercentage / 100) + this.getMonthlySalary();
         this.setMonthlySalary(newMonthlySalary);
     }
-
 }

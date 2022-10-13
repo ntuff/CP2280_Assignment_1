@@ -1,12 +1,9 @@
 /**
- * @author 20148596
  * Contains Product class.
- * This class an auxiliary component of both LineItem and Invoice classes.
+ * @author 20148596
+ * This class an auxiliary component of LineItem and Invoice classes.
  */
-
-//*TODO: format getters and setters
 public class Product {
-
     private int id;
     public String description;
     public double price;
@@ -34,11 +31,27 @@ public class Product {
     }
 
     /**
+     * returns the current id as an integer.
+     * @return id
+     */
+    public int getId(){
+        return id;
+    }
+
+    /**
      * Replaces the current description with a new description. This value must be a string.
      * @param description A character string used to describe the product.
      */
     public void setDescription(String description){
         this.description = description;
+    }
+
+    /**
+     * Returns the current description as a string.
+     * @return description
+     */
+    public String getDescription(){
+        return description;
     }
 
     /**
@@ -49,22 +62,6 @@ public class Product {
         if (price >= 0){
             this.price = price;
         }
-    }
-
-    /**
-     * returns the current id as an integer.
-     * @return id
-     */
-    public int getId(){
-        return id;
-    }
-
-    /**
-     * Returns the current description as a string.
-     * @return description
-     */
-    public String getDescription(){
-        return description;
     }
 
     /**
