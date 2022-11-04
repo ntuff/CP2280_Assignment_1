@@ -14,10 +14,10 @@ public class Invoice {
     public LineItem lineItem3;
 
     /**
-     * Creates an invoice.
-     * @param lineItem1 line item created in LineItem class.
-     * @param lineItem2 line item created in LineItem class.
-     * @param lineItem3 line item created in LineItem class.
+     * Creates an invoice
+     * @param lineItem1 line item created in LineItem class
+     * @param lineItem2 line item created in LineItem class
+     * @param lineItem3 line item created in LineItem class
      */
     public Invoice(LineItem lineItem1, LineItem lineItem2, LineItem lineItem3){
         this.lineItem1 = lineItem1;
@@ -26,9 +26,9 @@ public class Invoice {
     }
 
     /**
-     * Replaces current line item value with new line item.
-     * @param line line number of the line item.
-     * @param lineItem lineItem created in LineItem class.
+     * Set line item
+     * @param line line number of the line item
+     * @param lineItem lineItem created in LineItem class
      */
     public void setLineItem(int line, LineItem lineItem){
         if (line == 1){
@@ -43,8 +43,8 @@ public class Invoice {
     }
 
     /**
-     * Returns the line item corresponding to the given line number. Given value must be an integer.
-     * @param line Line number of line item.
+     * Get line item
+     * @param line Line number of line item
      * @return lineItem1 || lineItem2 || lineItem3
      */
     public LineItem getLineItem(int line) {
@@ -63,15 +63,15 @@ public class Invoice {
     }
 
     /**
-     * Returns a new lineItem that is "empty". This empty lineItem contains default values.
-     * @return lineItem
+     * Get blank line item
+     * @return lineItem a new lineItem that is empty
      */
     private  LineItem getBlankLineItem(){
         return new LineItem(new Product(0, "", 0), 0);
     }
 
     /**
-     * Returns the cumulative total of all line items in the invoice.
+     * Get invoice total
      * @return cost of combined lineItem1, lineItem2, and lineItem3
      */
     public double getInvoiceTotal() {

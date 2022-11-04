@@ -1,6 +1,9 @@
 /**
- * Contains Account class.
+ * Contains Account class. An account must possess the following:                   <p>
+ * - name                                                                           <p>
+ * -balance                                                                         <p>
  * @author 20148596
+ * <pre>
  */
 public class Account {
 
@@ -8,9 +11,9 @@ public class Account {
     private double balance;
 
     /**
-     * Creates an account.
-     * @param name Name assigned to the account.
-     * @param balance Number of dollars stored in the account.
+     * Creates an account
+     * @param name Name assigned to the account
+     * @param balance Number of dollars stored in the account
      */
     public Account(String name, double balance) {this.name = name;
         if(balance > 0)
@@ -18,15 +21,15 @@ public class Account {
     }
 
     /**
-     * Replaces the current account name with a new name. This value must be a string.
-     * @param name Name assigned to the account.
+     * Set account name
+     * @param name Name assigned to the account
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     *Returns the current account name as a string.
+     * Get account name
      * @return name
      */
     public String getName() {
@@ -34,7 +37,7 @@ public class Account {
     }
 
     /**
-     * Returns the current account balance as a double.
+     * Get account balance
      * @return balance
      */
     public double getBalance() {
@@ -42,9 +45,8 @@ public class Account {
     }
 
     /**
-     * Adds an amount to the current account balance as long as the contribution is greater than zero.
-     * This "credit" naming convention may be misinterpreted. Think of this method as a deposit.
-     * @param amount Number of dollars to interact with balance.
+     * Adds an amount to the current account balance as long as the contribution is greater than zero
+     * @param amount Number of dollars to interact with balance
      */
     public void credit(double amount){
         if(amount > 0){
@@ -53,11 +55,9 @@ public class Account {
     }
 
     /**
-     * Subtracts an amount from the current account balance as long as:
-     * - the current amount is greater than zero
-     * - the current amount is greater than the deduction.
-     * This "debit" naming convention may be misinterpreted. Think of this method as a withdrawal.
-     * @param amount Number of dollars to interact with balance.
+     * Subtracts an amount from the current account balance as long as the current amount is greater than zero
+     * and the current amount is greater than the deduction
+     * @param amount Number of dollars to interact with balance
      */
     public void debit(double amount){
         if(amount > 0){
@@ -70,7 +70,7 @@ public class Account {
     }
 
     /**
-     * Resets the current account balance to zero.
+     * Resets the current account balance to zero
      */
     public void reset(){
         this.balance = 0;

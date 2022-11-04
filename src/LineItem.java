@@ -13,9 +13,9 @@ public class LineItem{
     public Product product;
 
     /**
-     * Creates a line item.
-     * @param product product created in Product class.
-     * @param quantity An integer used to measure the amount of the product.
+     * Creates a line item
+     * @param product product created in Product class
+     * @param quantity An integer used to measure the amount of the product
      */
     public LineItem(Product product, int quantity){
         this.product = product;
@@ -25,15 +25,15 @@ public class LineItem{
     }
 
     /**
-     * Replaces the current product value with a new product.
-     * @param product product created in Product class.
+     * Sets product
+     * @param product product created in Product class
      */
     public void setProduct(Product product){
         this.product = product;
     }
 
     /**
-     * Returns the current product.
+     * Gets product
      * @return product
      */
     public Product getProduct(){
@@ -41,8 +41,8 @@ public class LineItem{
     }
 
     /**
-     * Replaces the current quantity value with a new quantity.
-     * @param quantity An integer used to measure the amount of the product.
+     * Set quantity
+     * @param quantity An integer used to measure the amount of the product
      */
     public void setQuantity(int quantity){
         if(quantity > 0){
@@ -51,7 +51,7 @@ public class LineItem{
     }
 
     /**
-     * Returns the current quantity.
+     * Get quantity
      * @return quantity
      */
     public int getQuantity(){
@@ -59,7 +59,7 @@ public class LineItem{
     }
 
     /**
-     * Returns the cumulative total of the product.
+     * Get total
      * @return total
      */
     public double getTotal(){

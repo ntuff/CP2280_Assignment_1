@@ -14,9 +14,9 @@ public class Employee {
 
     /**
      * Creates an employee.
-     * @param firstName First name of employee. This value must be a string.
-     * @param lastName Last name of employee. This value must be a string.
-     * @param monthlySalary Amount of dollars paid to employee on a monthly basis. This value must be a double.
+     * @param firstName First name of employee
+     * @param lastName Last name of employee
+     * @param monthlySalary Amount of dollars paid to employee on a monthly basis
      */
     public Employee(String firstName, String lastName, double monthlySalary){
         this.firstName = firstName;
@@ -27,15 +27,15 @@ public class Employee {
     }
 
     /**
-     * Replaces the current employee's first name with a new first name. This value must be a string.
-     * @param firstName First name of employee. This value must be a string.
+     * Set employee first name
+     * @param firstName First name of employee
      */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
     /**
-     * Returns the current employee's first name as a string.
+     * Get employee first name
      * @return firstName
      */
     public String getFirstName(){
@@ -43,15 +43,15 @@ public class Employee {
     }
 
     /**
-     * Replaces the current employee's last name with a new last name. This value must be a string.
-     * @param lastName Last name of employee. This value must be a string.
+     * Set employee last name
+     * @param lastName Last name of employee
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
     /**
-     * Returns the current employee's last name as a string.
+     * Get employee last name
      * @return lastName
      */
     public String getLastName(){
@@ -59,8 +59,8 @@ public class Employee {
     }
 
     /**
-     * Replaces the current employee's monthly salary with a new monthly salary. This value must be a double.
-     * @param monthlySalary Amount of dollars paid to employee on a monthly basis. This value must be a double.
+     * Set employee monthly salary
+     * @param monthlySalary Amount of dollars paid to employee
      */
     public void setMonthlySalary(double monthlySalary) {
         if (monthlySalary >= 0){
@@ -69,7 +69,7 @@ public class Employee {
     }
 
     /**
-     * Returns the current employee's monthly salary as a double.
+     * Get employee monthly salary
      * @return monthlySalary
      */
     public double getMonthlySalary(){
@@ -77,8 +77,8 @@ public class Employee {
     }
 
     /**
-     * Raises the employee's monthly salary by a given percentage of itself. Percentage value must be a double.
-     * @param raisePercentage percent raise of employee's monthly salary.
+     * Raises the employee's monthly salary by a given percentage of itself
+     * @param raisePercentage percent raise of employee's monthly salary
      */
     public void raiseMonthlySalary(double raisePercentage){
         double newMonthlySalary = this.getMonthlySalary() * (raisePercentage / 100) + this.getMonthlySalary();

@@ -16,9 +16,9 @@ public class Product {
 
     /**
      * Creates a product.
-     * @param id An integer used to identify the product. Value must be >= 0.
-     * @param description A character string used to describe the product.
-     * @param price A double representing the dollar value of the product.
+     * @param id An integer used to identify the product. Value must be >= 0
+     * @param description A character string used to describe the product
+     * @param price A double representing the dollar value of the product
      */
     public Product(int id, String description, double price){
         this.id = id;
@@ -29,8 +29,8 @@ public class Product {
     }
 
     /**
-     * Replaces the current id with a new id. This value must be an integer.
-     * @param id An integer used to identify the product. Value must be >= 0.
+     * Set product id
+     * @param id An integer used to identify the product
      */
     public void setId(int id){
         if (id >= 0) {
@@ -39,7 +39,7 @@ public class Product {
     }
 
     /**
-     * returns the current id as an integer.
+     * Get product id
      * @return id
      */
     public int getId(){
@@ -47,15 +47,15 @@ public class Product {
     }
 
     /**
-     * Replaces the current description with a new description. This value must be a string.
-     * @param description A character string used to describe the product.
+     * Set product description
+     * @param description A character string used to describe the product
      */
     public void setDescription(String description){
         this.description = description;
     }
 
     /**
-     * Returns the current description as a string.
+     * Get product description
      * @return description
      */
     public String getDescription(){
@@ -63,8 +63,8 @@ public class Product {
     }
 
     /**
-     * Replaces the current price with a new price. This value must be a double.
-     * @param price A double representing the dollar value of the product.
+     * Set product price
+     * @param price A double representing the dollar value of the product
      */
     public void setPrice(double price){
         if (price >= 0){
@@ -73,7 +73,7 @@ public class Product {
     }
 
     /**
-     * returns the current price as a double.
+     * Get product price
      * @return price
      */
     public double getPrice(){
