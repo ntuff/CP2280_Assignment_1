@@ -1,7 +1,12 @@
 /**
- * Contains Product class.
- * @author 20148596
- * This class an auxiliary component of LineItem and Invoice classes.
+ * Contains Product class. A product must have the following:                       <p>
+ * - product id                                                                     <p>
+ * - description                                                                    <p>
+ * - price                                                                          <p>
+ *                                                                                  <p>
+ * Note: This class an auxiliary component of LineItem and Invoice classes.         <p>
+ * @author 20148596                                                                 <p>
+ *<pre>
  */
 public class Product {
 

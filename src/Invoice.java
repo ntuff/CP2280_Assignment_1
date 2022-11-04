@@ -1,7 +1,11 @@
 /**
- * Contains Invoice class.
- * This class utilizes both LineItem and Product classes.
- * @author 20148596
+ * Contains Invoice class. An invoice must contain line items.                              <p>
+ *     In this case, 3 line items are required:                                             <p>
+ *         <code>&#64;public Invoice(LineItem lineItem1, LineItem lineItem2, LineItem lineItem3){</code>
+ *                                                                                          <p>
+ * Note: This class utilizes both LineItem and Product classes.                             <p>
+ * @author 20148596                                                                         <p>
+ * <pre>
  */
 public class Invoice {
 

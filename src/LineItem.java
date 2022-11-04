@@ -1,7 +1,11 @@
 /**
- * Contains LineItem class.
- * This class an auxiliary component of Invoice class. It also utilizes the Product class.
- * @author 20148596
+ * Contains LineItem class. A line item must have the following                                     <p>
+ * - product                                                                                        <p>
+ * - quantity                                                                                       <p>
+ *                                                                                                  <p>
+ * Note: This class an auxiliary component of Invoice class. It also utilizes the Product class.    <p>
+ * @author 20148596                                                                                 <p>
+ * <pre>
  */
 public class LineItem{
 

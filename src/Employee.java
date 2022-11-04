@@ -1,6 +1,10 @@
 /**
- * Contains Employee class.
+ * Contains Employee class. An employee must possess the following:                 <p>
+ * - first name                                                                     <p>
+ * - last name                                                                      <p>
+ * - monthly salary                                                                 <p>
  * @author 20148596
+ * <pre>
  */
 public class Employee {
 
