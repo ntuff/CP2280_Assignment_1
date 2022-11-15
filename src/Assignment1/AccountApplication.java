@@ -1,3 +1,5 @@
+package Assignment1;
+
 import java.util.Scanner;
 
 /**
@@ -10,7 +12,7 @@ public class AccountApplication {
     public static void main(String[] args) {
         Account account = new Account("Noah Tuff", 0.0);
 
-        System.out.println("Account Application");
+        System.out.println("Assignment1.Account Application");
 
         Scanner input = new Scanner(System.in);
         char c; //Char to drive menu choice
@@ -62,7 +64,7 @@ public class AccountApplication {
     }
 
     public static void printAccountInfo(Account account){
-        System.out.printf("Account name: %s\nBalance: $%.2f", account.getName(), account.getBalance());
+        System.out.printf("Assignment1.Account name: %s\nBalance: $%.2f", account.getName(), account.getBalance());
     }
 
 }

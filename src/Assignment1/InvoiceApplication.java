@@ -1,3 +1,5 @@
+package Assignment1;
+
 import java.util.Scanner;
 
 public class InvoiceApplication {
@@ -15,7 +17,7 @@ public class InvoiceApplication {
 
         Invoice invoice = new Invoice(lineItem1, lineItem2, lineItem3);
 
-        System.out.println("Invoice Application");
+        System.out.println("Assignment1.Invoice Application");
 
         Scanner input = new Scanner(System.in);
         char c; //Char to drive menu choice
@@ -129,7 +131,7 @@ public class InvoiceApplication {
                 }while (c2 != 'R');
 
             } else if (c == 'D') {
-                System.out.printf("\nOption %c\n------------\nInvoice:\n\n", c);
+                System.out.printf("\nOption %c\n------------\nAssignment1.Invoice:\n\n", c);
                 printLineItemInfo(lineItem1);
                 printLineItemInfo(lineItem2);
                 printLineItemInfo(lineItem3);
@@ -145,7 +147,7 @@ public class InvoiceApplication {
         System.out.println("(A) First Line Item");
         System.out.println("(B) Second Line Item");
         System.out.println("(C) Third Line Item");
-        System.out.println("(D) View Invoice");
+        System.out.println("(D) View Assignment1.Invoice");
         System.out.println("(Q) Quit");
     }
 
@@ -161,14 +163,14 @@ public class InvoiceApplication {
     }
 
     public static void printLineItemInfo (LineItem lineItem){
-        System.out.printf("Product: %s\nQuantity: %d\nTotal: $%.2f\n\n", lineItem.getProduct(), lineItem.getQuantity(), lineItem.getTotal());
+        System.out.printf("Assignment1.Product: %s\nQuantity: %d\nTotal: $%.2f\n\n", lineItem.getProduct(), lineItem.getQuantity(), lineItem.getTotal());
     }
 
     public static void printProductInfo(Product product){
-        System.out.printf("Product ID: %d\nDescription: %s\nPrice: $%.2f\n\n", product.getId(), product.getDescription(), product.getPrice());
+        System.out.printf("Assignment1.Product ID: %d\nDescription: %s\nPrice: $%.2f\n\n", product.getId(), product.getDescription(), product.getPrice());
     }
 
     public static void printInvoice(Invoice invoice) {
-        System.out.printf("Invoice Total: %.2f\n", invoice.getInvoiceTotal());
+        System.out.printf("Assignment1.Invoice Total: %.2f\n", invoice.getInvoiceTotal());
     }
 }

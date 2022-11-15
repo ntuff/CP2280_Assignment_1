@@ -1,5 +1,7 @@
+package Assignment1;
+
 /**
- * Contains Account class. An account must possess the following:                   <p>
+ * Contains Assignment1.Account class. An account must possess the following:                   <p>
  * - name                                                                           <p>
  * -balance                                                                         <p>
  * @author 20148596

@@ -1,3 +1,5 @@
+package Assignment1;
+
 /**
  * @author 20148596
  */
@@ -5,7 +7,7 @@
 public class ProductTest {
 
     public static void main(String[] args) {
-        System.out.println("Product Class Tester\n");
+        System.out.println("Assignment1.Product Class Tester\n");
 
         // Test 1: Create new products
         Product product1 = new Product(
@@ -57,6 +59,6 @@ public class ProductTest {
     }
 
     public static void printProductInfo(Product product){
-        System.out.printf("Product ID: %d\nDescription: %s\nPrice: $%.2f\n\n", product.getId(), product.getDescription(), product.getPrice());
+        System.out.printf("Assignment1.Product ID: %d\nDescription: %s\nPrice: $%.2f\n\n", product.getId(), product.getDescription(), product.getPrice());
     }
 }

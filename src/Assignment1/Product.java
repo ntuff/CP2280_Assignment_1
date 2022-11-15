@@ -1,10 +1,12 @@
+package Assignment1;
+
 /**
- * Contains Product class. A product must have the following:                       <p>
+ * Contains Assignment1.Product class. A product must have the following:                       <p>
  * - product id                                                                     <p>
  * - description                                                                    <p>
  * - price                                                                          <p>
  *                                                                                  <p>
- * Note: This class an auxiliary component of LineItem and Invoice classes.         <p>
+ * Note: This class an auxiliary component of Assignment1.LineItem and Assignment1.Invoice classes.         <p>
  * @author 20148596                                                                 <p>
  *<pre>
  */

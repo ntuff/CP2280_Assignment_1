@@ -1,3 +1,5 @@
+package Assignment1;
+
 /**
  * @author 20148596
  */
@@ -5,7 +7,7 @@
 public class EmployeeTest {
 
     public static void main(String[] args) {
-        System.out.println("Employee Class Tester");
+        System.out.println("Assignment1.Employee Class Tester");
 
         // Test 1: Create new employees
         Employee employee1 = new Employee("Noah", "Tuff", 3000);

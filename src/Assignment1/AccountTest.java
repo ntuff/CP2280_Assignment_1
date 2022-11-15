@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Assignment1;
 
 /**
  * @author 20148596
@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class AccountTest {
 
     public static void main(String[] args) {
-        System.out.println("Account Class Tester");
+        System.out.println("Assignment1.Account Class Tester");
 
         //Test 1: create an account and echo details
         Account account = new Account("Noah Tuff", 0.0);
@@ -47,6 +47,6 @@ public class AccountTest {
     }
 
     public static void printAccountInfo(Account account){
-        System.out.printf("Account name: %s\nBalance: $%.2f", account.getName(), account.getBalance());
+        System.out.printf("Assignment1.Account name: %s\nBalance: $%.2f", account.getName(), account.getBalance());
     }
 }

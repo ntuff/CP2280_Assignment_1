@@ -1,5 +1,7 @@
+package Assignment1;
+
 /**
- * Contains Employee class. An employee must possess the following:                 <p>
+ * Contains Assignment1.Employee class. An employee must possess the following:                 <p>
  * - first name                                                                     <p>
  * - last name                                                                      <p>
  * - monthly salary                                                                 <p>
