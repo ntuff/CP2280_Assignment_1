@@ -1,11 +1,12 @@
 package Assignment1;
 
 /**
- * Contains Assignment1.Invoice class. An invoice must contain line items.                              <p>
+ * Contains an Invoice class that may be used by businesses selling various products. This is a pretty standard invoice <p>
+ * that would usually contain 1 or more lineItems (lineItems contain product information & product quantity.)
  *     In this case, 3 line items are required:                                             <p>
- *         <code>&#64;public Assignment1.Invoice(Assignment1.LineItem lineItem1, Assignment1.LineItem lineItem2, Assignment1.LineItem lineItem3){</code>
+ *     <code>&#64;public Invoice(LineItem lineItem1, LineItem lineItem2, LineItem lineItem3){</code>
  *                                                                                          <p>
- * Note: This class utilizes both Assignment1.LineItem and Assignment1.Product classes.                             <p>
+ * Note: This class utilizes both LineItem and Product classes.                             <p>
  * @author 20148596                                                                         <p>
  * <pre>
  */
@@ -17,9 +18,9 @@ public class Invoice {
 
     /**
      * Creates an invoice
-     * @param lineItem1 line item created in Assignment1.LineItem class
-     * @param lineItem2 line item created in Assignment1.LineItem class
-     * @param lineItem3 line item created in Assignment1.LineItem class
+     * @param lineItem1 line item created in LineItem class
+     * @param lineItem2 line item created in LineItem class
+     * @param lineItem3 line item created in LineItem class
      */
     public Invoice(LineItem lineItem1, LineItem lineItem2, LineItem lineItem3){
         this.lineItem1 = lineItem1;
@@ -30,7 +31,7 @@ public class Invoice {
     /**
      * Set line item
      * @param line line number of the line item
-     * @param lineItem lineItem created in Assignment1.LineItem class
+     * @param lineItem lineItem created in LineItem class
      */
     public void setLineItem(int line, LineItem lineItem){
         if (line == 1){

@@ -1,9 +1,8 @@
 package Assignment1;
 
 /**
- * Contains Assignment1.Account class. An account must possess the following:                   <p>
- * - name                                                                           <p>
- * -balance                                                                         <p>
+ * Contains an Account class which represents an individuals personal bank account.                                  <p>
+ * Allows a person to make both incoming and outgoing transactions.
  * @author 20148596
  * <pre>
  */
@@ -13,7 +12,7 @@ public class Account {
     private double balance;
 
     /**
-     * Creates an account
+     * Creates a single bank account
      * @param name Name assigned to the account
      * @param balance Number of dollars stored in the account
      */
@@ -23,7 +22,7 @@ public class Account {
     }
 
     /**
-     * Set account name
+     * Sets the name of the account holder
      * @param name Name assigned to the account
      */
     public void setName(String name) {
@@ -31,7 +30,7 @@ public class Account {
     }
 
     /**
-     * Get account name
+     * Gets the name of the account holder
      * @return name
      */
     public String getName() {
@@ -39,7 +38,7 @@ public class Account {
     }
 
     /**
-     * Get account balance
+     * Gets the current account balance
      * @return balance
      */
     public double getBalance() {

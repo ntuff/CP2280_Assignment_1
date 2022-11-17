@@ -1,10 +1,9 @@
 package Assignment1;
 
 /**
- * Contains Assignment1.Employee class. An employee must possess the following:                 <p>
- * - first name                                                                     <p>
- * - last name                                                                      <p>
- * - monthly salary                                                                 <p>
+ * Contains Employee class that may be used by an employer to hold basic employee info.                 <p>
+ * This class allows for modification of employee information if so desired.
+
  * @author 20148596
  * <pre>
  */
@@ -15,7 +14,7 @@ public class Employee {
     private double monthlySalary;
 
     /**
-     * Creates an employee.
+     * Creates an employee
      * @param firstName First name of employee
      * @param lastName Last name of employee
      * @param monthlySalary Amount of dollars paid to employee on a monthly basis
@@ -29,7 +28,7 @@ public class Employee {
     }
 
     /**
-     * Set employee first name
+     * Sets the employee's first name
      * @param firstName First name of employee
      */
     public void setFirstName(String firstName) {
@@ -37,7 +36,7 @@ public class Employee {
     }
 
     /**
-     * Get employee first name
+     * Gets the employee's first name
      * @return firstName
      */
     public String getFirstName(){
@@ -45,7 +44,7 @@ public class Employee {
     }
 
     /**
-     * Set employee last name
+     * Sets the employee's last name
      * @param lastName Last name of employee
      */
     public void setLastName(String lastName) {
@@ -53,7 +52,7 @@ public class Employee {
     }
 
     /**
-     * Get employee last name
+     * Gets the employee's last name
      * @return lastName
      */
     public String getLastName(){
@@ -61,7 +60,7 @@ public class Employee {
     }
 
     /**
-     * Set employee monthly salary
+     * Sets the employee's monthly salary
      * @param monthlySalary Amount of dollars paid to employee
      */
     public void setMonthlySalary(double monthlySalary) {
@@ -71,7 +70,7 @@ public class Employee {
     }
 
     /**
-     * Get employee monthly salary
+     * Gets the employee's monthly salary
      * @return monthlySalary
      */
     public double getMonthlySalary(){

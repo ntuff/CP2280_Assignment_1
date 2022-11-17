@@ -1,12 +1,10 @@
 package Assignment1;
 
 /**
- * Contains Assignment1.LineItem class. A line item must have the following                                     <p>
- * - product                                                                                        <p>
- * - quantity                                                                                       <p>
- *                                                                                                  <p>
+ * Contains a LineItem class that is used in conjunction with products and invoices. A lineItem represents a singular       <p>
+ * line on an invoice and contains a specific product and the quantity of said product.                                     <p>
  * Note: This class an auxiliary component of Assignment1.Invoice class. It also utilizes the Assignment1.Product class.    <p>
- * @author 20148596                                                                                 <p>
+ * @author 20148596                                                                                                         <p>
  * <pre>
  */
 public class LineItem{
@@ -16,7 +14,7 @@ public class LineItem{
 
     /**
      * Creates a line item
-     * @param product product created in Assignment1.Product class
+     * @param product product created in Product class
      * @param quantity An integer used to measure the amount of the product
      */
     public LineItem(Product product, int quantity){
@@ -28,7 +26,7 @@ public class LineItem{
 
     /**
      * Sets product
-     * @param product product created in Assignment1.Product class
+     * @param product product created in Product class
      */
     public void setProduct(Product product){
         this.product = product;

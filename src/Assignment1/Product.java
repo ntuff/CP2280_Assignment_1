@@ -1,12 +1,8 @@
 package Assignment1;
 
 /**
- * Contains Assignment1.Product class. A product must have the following:                       <p>
- * - product id                                                                     <p>
- * - description                                                                    <p>
- * - price                                                                          <p>
- *                                                                                  <p>
- * Note: This class an auxiliary component of Assignment1.LineItem and Assignment1.Invoice classes.         <p>
+ * Contains a Product class that represents a product that might be found in a stores inventory or invoice system.   <p>
+ * Note: This class an auxiliary component of LineItem and Invoice classes.         <p>
  * @author 20148596                                                                 <p>
  *<pre>
  */
